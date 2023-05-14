@@ -18,7 +18,7 @@
     },
     {
       "question": "What is the purpose of the air-blood barrier in the lungs?",
-      "options": {
+     
         "a": "To filter out particulate matter",
         "b": "To warm and humidify inhaled air",
         "c": "To facilitate gas exchange between the air and blood",
@@ -28,7 +28,7 @@
     },
     {
       "question": "What role does the respiratory system play in maintaining acid-base balance?",
-      "options": {
+     
         "a": "Controlling the levels of oxygen in the blood",
         "b": "Regulating the levels of carbon dioxide in the blood",
         "c": "Maintaining the body's pH balance",
@@ -38,7 +38,7 @@
     },
     {
       "question": "Which part of the respiratory system is responsible for the sense of smell?",
-      "options": {
+      
         "a": "Trachea",
         "b": "Larynx",
         "c": "Pharynx",
