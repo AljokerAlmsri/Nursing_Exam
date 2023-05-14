@@ -4,7 +4,7 @@
         "a": "Transporting nutrients to the body",
         "b": "Eliminating waste products",
         "c": "Delivering oxygen and removing carbon dioxide",
-        "d": "Maintaining water balance"
+        "d": "Maintaining water balance",
       "answer": "c"
     },
     {
@@ -12,7 +12,7 @@
         "a": "Bronchi",
         "b": "Trachea",
         "c": "Alveoli",
-        "d": "Diaphragm"
+        "d": "Diaphragm",
     
       "answer": "c"
     },
@@ -22,7 +22,7 @@
         "a": "To filter out particulate matter",
         "b": "To warm and humidify inhaled air",
         "c": "To facilitate gas exchange between the air and blood",
-        "d": "To protect the delicate airways"
+        "d": "To protect the delicate airways",
       
       "answer": "c"
     },
@@ -32,7 +32,7 @@
         "a": "Controlling the levels of oxygen in the blood",
         "b": "Regulating the levels of carbon dioxide in the blood",
         "c": "Maintaining the body's pH balance",
-        "d": "Facilitating the transport of bicarbonate ions"
+        "d": "Facilitating the transport of bicarbonate ions",
       
       "answer": "b"
     },
@@ -42,7 +42,7 @@
         "a": "Trachea",
         "b": "Larynx",
         "c": "Pharynx",
-        "d": "Upper airways"
+        "d": "Upper airways",
       
       "answer": "d"
     }
