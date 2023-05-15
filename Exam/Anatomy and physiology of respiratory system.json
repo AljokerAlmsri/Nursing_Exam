@@ -1,49 +1,42 @@
 [
-    {
-      "question": "What is the main function of the respiratory system?",
-        "a": "Transporting nutrients to the body",
-        "b": "Eliminating waste products",
-        "c": "Delivering oxygen and removing carbon dioxide",
-        "d": "Maintaining water balance",
-      "answer": "c"
-    },
-    {
-      "question": "Where does gas exchange occur in the respiratory system?",
-        "a": "Bronchi",
-        "b": "Trachea",
-        "c": "Alveoli",
-        "d": "Diaphragm",
-    
-      "answer": "c"
-    },
-    {
-      "question": "What is the purpose of the air-blood barrier in the lungs?",
-     
-        "a": "To filter out particulate matter",
-        "b": "To warm and humidify inhaled air",
-        "c": "To facilitate gas exchange between the air and blood",
-        "d": "To protect the delicate airways",
-      
-      "answer": "c"
-    },
-    {
-      "question": "What role does the respiratory system play in maintaining acid-base balance?",
-     
-        "a": "Controlling the levels of oxygen in the blood",
-        "b": "Regulating the levels of carbon dioxide in the blood",
-        "c": "Maintaining the body's pH balance",
-        "d": "Facilitating the transport of bicarbonate ions",
-      
-      "answer": "b"
-    },
-    {
-      "question": "Which part of the respiratory system is responsible for the sense of smell?",
-      
-        "a": "Trachea",
-        "b": "Larynx",
-        "c": "Pharynx",
-        "d": "Upper airways",
-      
-      "answer": "d"
-    }
-  ]
+  {
+    "question": "What is the main function of the respiratory system?",
+    "a": "Transporting nutrients to the body",
+    "b": "Eliminating waste products",
+    "c": "Delivering oxygen and removing carbon dioxide",
+    "d": "Maintaining water balance",
+    "answer": "c"
+  },
+  {
+    "question": "Where does gas exchange occur in the respiratory system?",
+    "a": "Bronchi",
+    "b": "Trachea",
+    "c": "Alveoli",
+    "d": "Diaphragm",
+    "answer": "c"
+  },
+  {
+    "question": "What is the purpose of the air-blood barrier in the lungs?",
+    "a": "To filter out particulate matter",
+    "b": "To warm and humidify inhaled air",
+    "c": "To facilitate gas exchange between the air and blood",
+    "d": "To protect the delicate airways",
+    "answer": "c"
+  },
+  {
+    "question": "What role does the respiratory system play in maintaining acid-base balance?",
+    "a": "Controlling the levels of oxygen in the blood",
+    "b": "Regulating the levels of carbon dioxide in the blood",
+    "c": "Maintaining the body's pH balance",
+    "d": "Facilitating the transport of bicarbonate ions",
+    "answer": "b"
+  },
+  {
+    "question": "Which part of the respiratory system is responsible for the sense of smell?",
+    "a": "Trachea",
+    "b": "Larynx",
+    "c": "Pharynx",
+    "d": "Upper airways",
+    "answer": "d"
+  }
+]
