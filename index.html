@@ -46,6 +46,9 @@ const firebaseConfig = {
         // دالة لإنشاء حساب جديد
 
 // دالة لإنشاء حساب جديد
+
+
+// دالة لإنشاء حساب جديد
 function signup() {
   const email = document.getElementById("signupEmail").value;
   const password = document.getElementById("signupPassword").value;
@@ -60,7 +63,7 @@ function signup() {
       const usersRef = firebase.database().ref('users');
       usersRef.child(userId).set({
         email: email,
-        // يمكنك إضافة المزيد من المعلومات هنا حسب احتياجاتك
+        password: password
       });
 
       console.log("تم إنشاء الحساب بنجاح!", user);
@@ -73,7 +76,6 @@ function signup() {
       console.error("حدث خطأ أثناء إنشاء الحساب:", errorCode, errorMessage);
     });
 }
-
 
     
   </script>
