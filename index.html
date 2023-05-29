@@ -42,24 +42,36 @@ const firebaseConfig = {
     }
 
     // دالة لإنشاء حساب جديد
-    function signup() {
-      const email = document.getElementById("signupEmail").value;
-      const password = document.getElementById("signupPassword").value;
+    
+        // دالة لإنشاء حساب جديد
+function signup() {
+  const email = document.getElementById("signupEmail").value;
+  const password = document.getElementById("signupPassword").value;
 
-      firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-          // تم إنشاء الحساب بنجاح
-          const user = userCredential.user;
-          console.log("تم إنشاء الحساب بنجاح!", user);
-          // قم بتوجيه المستخدم إلى صفحة أخرى بعد إنشاء الحساب
-        })
-        .catch((error) => {
-          // حدث خطأ أثناء إنشاء الحساب
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          console.error("حدث خطأ أثناء إنشاء الحساب:", errorCode, errorMessage);
-        });
-    }
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      // تم إنشاء الحساب بنجاح
+      const user = userCredential.user;
+      const userId = user.uid; // معرّف المستخدم
+
+      // إنشاء قسم في قاعدة البيانات باستخدام معرّف المستخدم
+      firebase.database().ref('users/' + userId).set({
+        email: email,
+        // يمكنك إضافة مزيد من المعلومات هنا حسب احتياجاتك
+      });
+
+      console.log("تم إنشاء الحساب بنجاح!", user);
+      // قم بتوجيه المستخدم إلى صفحة أخرى بعد إنشاء الحساب
+    })
+    .catch((error) => {
+      // حدث خطأ أثناء إنشاء الحساب
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error("حدث خطأ أثناء إنشاء الحساب:", errorCode, errorMessage);
+    });
+}
+
+    
   </script>
 </head>
 <body>
