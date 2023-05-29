@@ -35,7 +35,42 @@ const firebaseConfig = {
           const user = userCredential.user;
           console.log("تم تسجيل الدخول بنجاح!", user);
           // قم بتوجيه المستخدم إلى صفحة أخرى بعد تسجيل الدخول
-        })
+      
+        
+        
+        firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    const userId = user.uid; // معرّف المستخدم الحالي
+    const userRef = firebase.database().ref('users/' + userId);
+    
+    // استرداد بيانات المستخدم من قاعدة البيانات
+    userRef.once('value')
+      .then((snapshot) => {
+        const userData = snapshot.val();
+        const email = userData.email;
+        const password = userData.password;
+        
+        // عرض بيانات البريد الإلكتروني وكلمة المرور في الصفحة
+        document.getElementById('emailField').innerText = email;
+        document.getElementById('passwordField').innerText = password;
+      })
+      .catch((error) => {
+        console.error("حدث خطأ أثناء استرداد بيانات المستخدم:", error);
+      });
+  }
+});
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      })
         .catch((error) => {
           // حدث خطأ أثناء تسجيل الدخول
           const errorCode = error.code;
@@ -97,5 +132,17 @@ function signup() {
   <input type="email" id="signupEmail" placeholder="البريد الإلكتروني" required>
   <input type="password" id="signupPassword" placeholder="كلمة المرور" required>
   <button onclick="signup()">إنشاء حساب</button>
+  
+  
+  
+  
+  <h2>بيانات المستخدم:</h2>
+<p>البريد الإلكتروني: <span id="emailField"></span></p>
+<p>كلمة المرور: <span id="passwordField"></span></p>
+
+  
+  
+  
+  
 </body>
 </html>
