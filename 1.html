@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>صفحة المشغل</title>
+  <style>
+    #video-container {
+      position: relative;
+      width: 560px;
+      height: 315px;
+    }
+
+    #video-iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    #stop-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-container">
+    <iframe id="video-iframe" src="https://www.youtube.com/embed/WlO-riE-Nm8?rel=0" frameborder="0" allowfullscreen></iframe>
+    <button id="stop-button">إيقاف</button>
+  </div>
+
+  <script>
+    var videoIframe = document.getElementById("video-iframe");
+    var stopButton = document.getElementById("stop-button");
+
+    // إضافة حدث النقر على الزر "إيقاف"
+    stopButton.addEventListener("click", function() {
+      // إرسال رسالة للفيديو لإيقافه
+      videoIframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+    });
+  </script>
+</body>
+</html>
